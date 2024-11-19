@@ -1,0 +1,36 @@
+import org.w3c.dom.ls.LSOutput;
+
+public class Car {
+
+    //Marke, Kosten, Leistung, Sitzplätze, gewicht
+
+    private String brand;
+    private int cost;
+    private int power;
+    private int seats;
+    private int weight;
+
+    public Car(String brand, int cost, int power, int seats, int weight) {
+        this.brand = brand;
+        this.cost = cost;
+        this.power = power;
+        this.seats = seats;
+        this.weight = weight;
+    }
+
+    public String makeSound() {
+        return ("Brum brum ...");
+    }
+
+    public String isExtremlyExpensive() {
+        if (this.cost >= 2) {
+            return ("expensive");
+        }
+        return ("not expensive");
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s costs %d what it makes it %s, it has %d seats, %d ps and it weights %d kg. %s", this.brand, this.cost, isExtremlyExpensive(), this.seats, this.power, this.weight, makeSound());
+    }
+}

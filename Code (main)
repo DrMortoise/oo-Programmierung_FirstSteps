@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("--- First steps ---");
+
+        Car McLaren = new Car("McLaren", 200000, 600, 2, 1283);
+        System.out.println(McLaren);
+
+        Car porsche = new Car("Porsche", 60000, 385, 3, 1450);
+        System.out.println(porsche);
+
+        Car ferrari = new Car("Ferrari", 5000000, 500, 2, 1280);
+        System.out.println(ferrari);
+
+        PC customiced01 = new PC(16,128, "Mifcom", "Asus", 750);
+        System.out.println(customiced01);
+        PC customiced02 = new PC(32,256, "MSI", "msi", 1050);
+        System.out.println(customiced02);
+        PC customiced03 = new PC(64,1000, "Lenovo", "Lenovo", 500);
+        System.out.println(customiced03);
+    }
+}

@@ -1,0 +1,29 @@
+public class PC {
+    private int ram;
+    private String brand;
+    private String motherboard;
+    private int ssd;
+    private String cpu;
+    private int powerUnit;
+
+    public PC(int ram, int ssd, String brand, String motherboard, int powerunit) {
+        this.ram = ram;
+        this.brand = brand;
+        this.ssd = ssd;
+        this.cpu = cpu;
+        this.powerUnit = powerunit;
+    }
+
+    public String explosion() {
+        return ("pppuuuccchhh");
+    }
+
+    public String renderSound() {
+        return ("wwwwwwwww...");
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s is rendering a blender file and makes a sound: %s, their components are %s GB ram, %s motherboard, a ssd with %d, a cpu called %s and a powerUnit with %d watt", this.brand, renderSound(), this.ram, this.motherboard, this.ssd, this.cpu, this.powerUnit);
+    }
+}
